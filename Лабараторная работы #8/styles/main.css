@@ -1,0 +1,84 @@
+/* Основные стили для тела страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px; /* Увеличим максимальную ширину */
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Градиентный фон */
+    min-height: 100vh;
+}
+
+/* Стилизация кнопок */
+button {
+    background: linear-gradient(45deg, #2196F3, #1976D2);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 25px; /* Закругленные кнопки */
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #1976D2, #2196F3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для блока с результатами */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.6;
+    min-height: 60px;
+    transition: all 0.3s ease;
+}
+
+#result:not(:empty) {
+    border-left: 5px solid #2196F3;
+}
+
+/* Контейнер для центрирования содержимого */
+.container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+}
+
+/* Стили для заголовка */
+h1 {
+    color: #1565C0;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Медиа-запрос для адаптивности на мобильных устройствах */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
+    
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+} 
